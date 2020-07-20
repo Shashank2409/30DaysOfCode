@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 const int maxNodes = 1e3 + 5;
-int graph[maxNodes][maxNodes] , residual[maxNodes][maxNodes] , parent[maxNodes];
+int graph[maxNodes][maxNodes] , residual[maxNodes][maxNodes] , parent[maxNodes]; 
 
 bool checkAugmentedPath(int &source , int &sink , int &nodes){
 	bool visited[nodes + 1];
