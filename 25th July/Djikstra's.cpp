@@ -35,7 +35,7 @@ int main(){
 	while(pq.size()){
 		long long dist = pq.top().first , from = pq.top().second;
 		pq.pop();
-		
+
 		for(auto to : graph[from]){
 			if(dist + wei[{min(from , to) , max(from , to)}] < distance[to]){
 				distance[to] = dist + wei[{min(from , to) , max(from , to)}];
