@@ -16,7 +16,7 @@ int findSet(int parent[] , int u){
 	if(x == u)
 		return u;
 	/* Path compression */
-	parent[u] = findSet(parent , x);
+	parent[u] = findSet(parent , x);	
 	return parent[u];
 }
 
