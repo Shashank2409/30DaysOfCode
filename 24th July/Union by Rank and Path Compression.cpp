@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+ 
 void unionSet(int x , int y , int rank[] , int parent[]){
 	if(rank[x] > rank[y]){
 		parent[y] = x;
